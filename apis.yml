@@ -1,7 +1,26 @@
 aid: idsmanager
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/idsmanager.png
 name: idsmanager
-description: idsmanager is a company surfaced as a portfolio company of qiming and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: IDSManager (Jiuzhou Yunteng, 九州云腾) is a Chinese enterprise cybersecurity vendor providing
+  unified identity management and zero-trust security. Its IDaaS platform centralizes account lifecycle,
+  authentication, and authorization around a 5A framework (application center, unique accounts, single
+  sign-on, centralized authorization, transparent auditing). The product line spans the IPG identity
+  authentication series, MFA combining biometrics and digital certificates, the SPG secure application
+  authentication series with Web and API gateways, and an SDP identity-defined perimeter for zero-trust
+  access. It targets cloud migration, mobile-office security, and regulatory compliance across internet,
+  finance, government, manufacturing, and education sectors. No public developer portal, API, or SDK is
+  currently published.
 url: https://raw.githubusercontent.com/api-evangelist/idsmanager/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +30,18 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Identity
+- Authentication
+- Authorization
+- Security
+- Zero Trust
+- Single Sign-On
+- IDaaS
+- Multi-Factor Authentication
+- API Gateway
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +49,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/idsmanager-domain-security.yml
 - type: Website
   url: https://idsmanager.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
